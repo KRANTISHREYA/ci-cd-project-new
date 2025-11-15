@@ -1,0 +1,37 @@
+# AWS IAM Role-Based Access Control (RBAC) for EC2 Management
+
+This project demonstrates how to implement Role-Based Access Control (RBAC) on AWS 
+using IAM Users, Groups, Roles, and Custom Policies for managing EC2 instances.
+
+## 🔹 Features Implemented
+- IAM Groups (Admin, Operator, Viewer)
+- Custom EC2 Operator Policy
+- IAM Users assigned to groups
+- EC2 access verification for each role
+- Testing Start/Stop/View operations on EC2
+
+---
+
+## 📂 Project Structure
+- Policy-Files/ → Contains JSON files of IAM policies
+- README.md → Project documentation
+
+---
+
+## 🎥 YouTube Project Explanation Video
+👉 **Watch here:**  
+https://www.youtube.com/watch?v=b8FyUmvToow
+
+---
+
+
+## 🧪 Testing Results
+| User         | Permissions           | Result |
+|--------------|------------------------|--------|
+| AdminUser    | Full EC2 access        | ✔️ Works |
+| OperatorUser | Start/Stop/Describe    | ✔️ Works |
+| ViewerUser   | Read-only              | ✔️ Works |
+
+---
+
+## 📜 Custom Policy Used (Operator)
